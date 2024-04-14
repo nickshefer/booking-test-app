@@ -1,0 +1,28 @@
+.block {
+}
+.block input[type='radio']:checked + label:before {
+	background: #13a2ce;
+}
+.input {
+	display: none;
+}
+.label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.label:before {
+	content: '';
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: transparent;
+	border: 2px solid #a5a5a5;
+}

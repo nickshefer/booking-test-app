@@ -2,32 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	font-size: 30px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.custom-container {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0px 1rem;
+}
+
+.gradient-bg {
+	background: linear-gradient(#13a2ce, #dcf4f8);
+}
+
+.date-input {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1rem 1.2rem;
+	display: inline-block;
+	outline: none;
+	border: 2px solid #13a2ce;
+	border-radius: 0.4rem;
+}
+
+.flex-50 {
+	flex: 0 0 50%;
+}
+
+.activeBtn {
+	background: #13a2ce;
+	color: white;
+	transition: all 0.2s ease-in-out;
 }

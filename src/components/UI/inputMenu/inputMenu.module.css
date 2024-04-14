@@ -1,0 +1,13 @@
+.menu {
+	position: absolute;
+	width: 200px;
+	background: #fff;
+	z-index: 10;
+}
+.listItem {
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+}
+.listItem:hover {
+	background: #dcf4f8;
+}
